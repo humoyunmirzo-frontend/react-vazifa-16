@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+.container {
+  position: relative;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  box-shadow: 5px 5px 50px 5px rgb(226, 221, 221);
+  flex: 1;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+.logo a {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 32px;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.links-bar {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.responsive {
+  display: flex;
+  gap: 24px;
+}
+.active-responsive {
+  color: #116dff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.responsive i {
+  font-size: 30px;
+  color: grey;
+}
+.responsive .slash {
+  padding: .1px;
+  background-color: grey;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.links .more-link {
+  color: grey;
+}
+
+.links .edit-btn {
+  padding: 12px 24px;
+  background-color: #116dff;
+  border-radius: 21px;
+  color: white;
+  font-size: 17px;
+  border: none;
+}
+
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 160px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.user-name {
+  font-size: 34px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sections {
+  display: flex;
+  margin-top: 16px;
+  gap: 20px;
+  margin-bottom: 56px;
+}
+
+.sections button {
+  background-color: #fff;
+  border: none;
+  font-size: 16px;
+  color: grey;
+}
+
+.sections .active {
+  color: #222;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+.gallery div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.gallery img:hover {
+  cursor: pointer;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  gap: 16px;
+}
+footer .footer-links {
+  display: flex;
+  gap: 8px;
+}
+footer p {
+  font-size: 14px;
+  opacity: 80%;
+}
+footer p a {
+  color: black;
 }
